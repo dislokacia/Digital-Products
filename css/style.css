@@ -1429,6 +1429,12 @@ _:-ms-fullscreen, :root body {
   transition: 0.5s ease-in;
 }
 
+@media (max-width: 768px) {
+  .name-label, .email-label, .comment-label {
+    color: #000;
+  }
+}
+
 .name-label {
   top: 15px;
   left: 56px;
