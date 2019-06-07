@@ -600,8 +600,8 @@
 
 .slide {
     position: relative;
-    display: flex !important;
-    justify-content: center;
+    // display: flex !important;
+    // justify-content: center;
     & img {
         @media (max-width:768px) {
             max-width: 90%;
@@ -612,6 +612,10 @@
             // height: 400px;
         }
     }
+}
+
+.slide img {
+    margin: 0 auto;
 }
 
 .prev {
