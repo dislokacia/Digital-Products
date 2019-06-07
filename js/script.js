@@ -51,7 +51,7 @@ $.fatNav(), $(window).scroll(function () {
         $(".navigation,.fat-nav,.scroll").on("click", "a", function () {
             event.preventDefault();
             var o = e(this).attr("href"),
-                n = e(o).offset().top + 10;
+                n = e(o).offset().top - 119;
             e("html,body").stop().animate({
                 scrollTop: n
             }, 1e3, "swing", function () {})
