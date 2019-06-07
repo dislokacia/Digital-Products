@@ -709,6 +709,9 @@
     @media (max-width: 1280px) {
         left: 2%;
     }
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 .team-next {
@@ -729,6 +732,9 @@
     }
     @media (max-width: 1280px) {
         right: 2%;
+    }
+    @media (max-width: 768px) {
+        display: none;
     }
 }
 
@@ -891,11 +897,14 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    @media (max-width:600px) {
+        width: 90%;
+     }
     &__icon {
         position: relative;
-        @media (max-width:600px) {
-            display: none;
-         }
+        // @media (max-width:600px) {
+        //     margin-left: 30px;
+        //  }
         &--img {
             padding: 27px;
         }
@@ -917,6 +926,13 @@
         @media (max-width:767px) {
             min-height: 90px;
         }
+        @media (max-width:380px) {
+            padding: 0px;
+         }
+        // @media (max-width:600px) {
+        //    max-width: 80%;
+        //    margin-right: 50px;
+        // }
         &--text {
             font-size: 18px;
             font-family: map-get($font, secondary );
@@ -924,7 +940,7 @@
             letter-spacing: -0.1px;
             margin-top: 2px;
             margin-right: -3px;
-            margin-bottom: 0;
+            margin-bottom: 0; 
         }
     }
 }
@@ -944,11 +960,14 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    @media (max-width:600px) {
+        width: 90%;
+     }
     &__icon {
         position: relative;
-        @media (max-width:600px) {
-            display: none;
-         }
+        // @media (max-width:600px) {
+        //     margin-left: 30px;
+        //  }
         &--img {
             padding: 28px 37px 28px 37px; 
             // margin-right: -3px;
@@ -975,6 +994,10 @@
             width: 100%;
             min-height: 90px;
         }
+        // @media (max-width:600px) {
+        //     max-width: 80%;
+        //     margin-right: 50px;
+        //  }
         &--text {
             font-size: 18px;
             font-family: map-get($font, secondary );
