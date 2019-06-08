@@ -257,6 +257,15 @@
 .logo {
     margin-left: 14px;
     margin-top: 17px;
+    @media (max-width:768px) {
+        margin: 0;
+        margin-left: -30px;
+    }
+    &__img {
+        @media (max-width:768px) {
+            width: 70%;
+        }
+    }
     & a {
         padding: 25px 0;
     }
@@ -316,6 +325,7 @@
 .section__about {
     padding-top: 99px;
     padding-bottom: 99px;
+    background-color: map-get($colors, fourth);
     @media (max-width:992px) {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -328,6 +338,9 @@
     background-color: map-get($colors, secondary);
     padding: 75px 0 337px;
     margin: 25px 0 0 -30px;
+    @media (max-width:992px) {
+        margin-left: 0;
+    }
     @media (max-width:767px) {
         padding: 75px 0 100px;
         margin: 0;
@@ -400,6 +413,10 @@
 }
 
 // Section Services
+
+.section__services {
+    background-color: map-get($colors, fourth);
+}
 
 .services {
     &__panel {
@@ -621,7 +638,7 @@
 .prev {
     position: absolute;
     top: 44.6%;
-    left: 152px;
+    left: -8.6%;
     z-index: 2;
     padding: 10px;
     cursor: pointer;
@@ -633,6 +650,9 @@
     }
     &:active {
         box-shadow: 3px 3px 3px 3px #8880d3;
+    }
+    @media (min-width: 1601px) {
+        left: 7%;
     }
     @media (max-width:1200px) {
         left: 30px;
@@ -645,7 +665,7 @@
 .next {
     position: absolute;
     top: 44.6%;
-    right: 158px;
+    right: -7.9%;
     z-index: 2;
     padding: 10px;
     cursor: pointer;
@@ -657,6 +677,9 @@
     }
     &:active {
         box-shadow: 3px 3px 3px 3px #8880d3;
+    }
+    @media (min-width: 1601px) {
+        right: 7%;
     }
     @media (max-width:1200px) {
         right: 30px;
@@ -1256,6 +1279,9 @@ _:-ms-fullscreen, :root body {
     top: 13px;
     left: 9px;
     letter-spacing: -0.9px;
+    @media (max-width:1200px) {
+        left: 25px;
+    }
 }
 
 .required {
@@ -1292,17 +1318,19 @@ _:-ms-fullscreen, :root body {
     }
     &__socials {
         padding-top: 26px;
-        margin-left: -5px;
+        margin-right: -17px;
         @media (min-width: 768px) and (max-width: 1000px) {
-            margin-right: 50px;
+            margin-right: 0px;
         }
         @media (max-width: 768px) {
             padding-bottom: 30px;
+            justify-content: center !important;
         }
     }
     &__copy {
         @media (max-width: 768px) {
             text-align: center;
+            margin-left: 0;
         }
     }
 }
